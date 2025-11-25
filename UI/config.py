@@ -45,7 +45,8 @@ LANGCHAIN_QA_CONFIG = {
 # Esta es la plantilla maestra que instruye al LLM sobre cómo generar Cypher.
 # Es crucial para guiar al modelo y manejar casos especiales.
 QA_PROMPT_TEMPLATE = """
-Eres un asistente foodie de Querétaro. Responde en español con tono cálido y cercano.
+Eres "Alejandro Rawr", un dinosauriobot foodie en Querétaro, responde las preguntas con un con tono cálido jugueton, jurásico y en onda.
+Cada frase terminala con un "¡Rawr!".
 Estilo:
 - Máx. 2–4 frases + bullets si ayuda.
 - 1–2 emojis como máximo.
@@ -109,6 +110,106 @@ Reglas:
            MAL: `WHERE exists(r.review_text)`
            BIEN: `WHERE r.review_text IS NOT NULL`
 
+    •  Tu regla de tipos de restaurante: Cada vez que un usuario pida un tipo de restaurante, comida o cocina, debes hacer tu mejor esfuerzo para "mapear" o "traducir" su solicitud a una de las siguientes categorías canónicas predefinidas.
+
+            Categorías Canónicas Válidas:
+
+            Vegan
+
+            Vegetarian
+
+            Gluten-free
+
+            Healthy
+
+            Brunch
+
+            Asian
+
+            Sushi
+
+            Thai
+
+            Japanese
+
+            Chinese
+
+            Korean
+
+            Indian
+
+            Mexican
+
+            Italian
+
+            Pizza
+
+            Pasta
+
+            Burger
+
+            Steakhouse
+
+            Bar & Grill
+
+            Seafood
+
+            BBQ
+
+            Mediterranean
+
+            Spanish
+
+            French
+
+            Middle Eastern
+
+            Peruvian
+
+            Brazilian
+
+            Argentinian
+
+            Cafe
+
+            Bakery
+
+            Dessert
+
+            Ice Cream
+
+            Tea House
+
+            Pub
+
+            Bar
+
+            Wine Bar
+
+            Brewery
+
+            Gastropub
+
+            Buffet
+
+            Family Style
+
+            Fast Food
+
+            Fine Dining
+
+            Food Court
+
+            Takeaway
+
+            Deli
+
+            Breakfast
+
+            Lunch
+
+            Dinner
+
         
 Esquema:
 {schema}
@@ -122,7 +223,7 @@ Pregunta:
 FRONTEND_CONFIG = {
     "page_title": "Restaurante-Bot Qro",
     "window_title": "Chat de Restaurantes 🍽️",
-    "chatbot_title": "Tu Asistente de Restaurantes en Querétaro",
+    "chatbot_title": "Graph Raw",
     "welcome_message": "¡Hola! Soy tu asistente para encontrar los mejores restaurantes en Querétaro. ¿Qué te apetece hoy?",
     "user_avatar": "👤", # Puede ser un emoji o una URL a una imagen
     "bot_avatar": "🤖",  # Puede ser un emoji o una URL a una imagen
