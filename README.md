@@ -14,6 +14,7 @@ Interfaz tipo chat para consultar un grafo de **restaurantes** en Neo4j y visual
 - Docker Compose para levantar **Neo4j 5** con **APOC** listo para usar.
 
 
+```text
 ## 🧭 Estructura de carpetas
 
 ├── DB/
